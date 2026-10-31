@@ -1,0 +1,10 @@
+{
+  "intent": "0x62940cbd860e610e886e9c13c536856224d60602ddee8b3f38f27f56baa741a7",
+  "transactionHash": "0x96c1664cc70eb635783bc8c908511cfda44b7ec9e8131f6fea2d6ebeb2ad6029",
+  "actualNewNodeProcess": true,
+  "resultRecovered": true,
+  "gasRecovered": "1616658004506",
+  "journalCountBefore": 35,
+  "journalCountAfter": 35,
+  "noNewTransaction": true
+}

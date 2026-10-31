@@ -1,0 +1,22 @@
+{
+  "source": "api3dao/airnodehub-hackathon-starter",
+  "commit": "52933ae1fb9371446a927338473466c3d320e19a",
+  "license": "MIT",
+  "files": [
+    {
+      "name": "AirnodeV2Attestation.sol",
+      "url": "https://raw.githubusercontent.com/api3dao/airnodehub-hackathon-starter/52933ae1fb9371446a927338473466c3d320e19a/contracts/AirnodeV2Attestation.sol",
+      "sha256": "76a6f2cff1060ff1f45c1a09a5a400f31e095054aa071e8c4fd1bb630fa9ecbc"
+    },
+    {
+      "name": "ProjectedJson.sol",
+      "url": "https://raw.githubusercontent.com/api3dao/airnodehub-hackathon-starter/52933ae1fb9371446a927338473466c3d320e19a/contracts/ProjectedJson.sol",
+      "sha256": "28cec87ee36e4f61a2a6dfcc0d1cb0b8a2287b12802875054d7d891c548f29c2"
+    },
+    {
+      "name": "IsoTimestamp.sol",
+      "url": "https://raw.githubusercontent.com/api3dao/airnodehub-hackathon-starter/52933ae1fb9371446a927338473466c3d320e19a/contracts/IsoTimestamp.sol",
+      "sha256": "d470121962ed07441f7e0ce0825c81026edca1b25122964a975484fb65f4cc2b"
+    }
+  ]
+}

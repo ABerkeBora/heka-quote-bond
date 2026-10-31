@@ -1,0 +1,5 @@
+{
+  "intent": "0xde2cbe6aa6f1701cea0c75f9c2e80e657643b56a79adb85ab4c833ca0257f4ca",
+  "decision": "rejected before broadcast",
+  "reason": "Mandate budget or quote terms exceeded"
+}

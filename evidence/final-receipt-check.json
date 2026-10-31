@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-31T02:58:30.552Z",
+  "chainId": 84532,
+  "results": [
+    {
+      "kind": "deployed contract",
+      "hash": "0x953487c5559607010844977eb797d30daeeff5ac5905712d1d3b53acdcecbdfb",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52463470",
+      "url": "https://sepolia.basescan.org/tx/0x953487c5559607010844977eb797d30daeeff5ac5905712d1d3b53acdcecbdfb"
+    },
+    {
+      "kind": "positive report invoice",
+      "hash": "0xcc488ac491a2c9e371a2b370c0433baa0229373bd9dad831e2e28b257b17111d",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52465744",
+      "url": "https://sepolia.basescan.org/tx/0xcc488ac491a2c9e371a2b370c0433baa0229373bd9dad831e2e28b257b17111d"
+    },
+    {
+      "kind": "capped invoice",
+      "hash": "0xf2067aea97fe5e83b384668192f9a90e6308851d493399a8ba836c01b14a15df",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52466193",
+      "url": "https://sepolia.basescan.org/tx/0xf2067aea97fe5e83b384668192f9a90e6308851d493399a8ba836c01b14a15df"
+    },
+    {
+      "kind": "zero-topup invoice",
+      "hash": "0x96c1664cc70eb635783bc8c908511cfda44b7ec9e8131f6fea2d6ebeb2ad6029",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52466598",
+      "url": "https://sepolia.basescan.org/tx/0x96c1664cc70eb635783bc8c908511cfda44b7ec9e8131f6fea2d6ebeb2ad6029"
+    },
+    {
+      "kind": "edited",
+      "hash": "0xfb6e3a4783c3a691d64b2505192b7b26e7a64a79ebe75d45283268f5a2037f49",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52464214",
+      "url": "https://sepolia.basescan.org/tx/0xfb6e3a4783c3a691d64b2505192b7b26e7a64a79ebe75d45283268f5a2037f49"
+    },
+    {
+      "kind": "stale",
+      "hash": "0x55fab4bd398ca3dc30d9dd5eaef1f8177b12f5993151f28c07d9db73bfb3b1c6",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52464250",
+      "url": "https://sepolia.basescan.org/tx/0x55fab4bd398ca3dc30d9dd5eaef1f8177b12f5993151f28c07d9db73bfb3b1c6"
+    },
+    {
+      "kind": "wrong-request",
+      "hash": "0x35a0dba8c41821a4562279ded2c7f9d3fdc879b83a8cb4beb2b4020402bc9ea3",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52464291",
+      "url": "https://sepolia.basescan.org/tx/0x35a0dba8c41821a4562279ded2c7f9d3fdc879b83a8cb4beb2b4020402bc9ea3"
+    },
+    {
+      "kind": "wrong-signer",
+      "hash": "0x0c7586f35c6a0c7982cf136aa4b09b59497bef2e106947d1e02ebae19c59ac2d",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52464328",
+      "url": "https://sepolia.basescan.org/tx/0x0c7586f35c6a0c7982cf136aa4b09b59497bef2e106947d1e02ebae19c59ac2d"
+    }
+  ]
+}

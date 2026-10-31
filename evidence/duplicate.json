@@ -1,0 +1,39 @@
+{
+  "intent": "0xde2cbe6aa6f1701cea0c75f9c2e80e657643b56a79adb85ab4c833ca0257f4ca",
+  "validatorDecision": "duplicate rejected",
+  "noBroadcast": true,
+  "onchainRejection": "The contract function \"payApprovedQuote\" reverted.",
+  "before": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "240082774"
+    },
+    "buyer": {
+      "usdc": "900000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "100000000",
+      "usdt": "9917226"
+    },
+    "reserve": "0",
+    "totalReserved": "0"
+  },
+  "after": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "240082774"
+    },
+    "buyer": {
+      "usdc": "900000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "100000000",
+      "usdt": "9917226"
+    },
+    "reserve": "0",
+    "totalReserved": "0"
+  },
+  "unchanged": true
+}

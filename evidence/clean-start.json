@@ -1,0 +1,13 @@
+{
+  "npmCi": true,
+  "forgeBuild": true,
+  "productionBuild": true,
+  "productionStart": true,
+  "noEnvironmentFile": true,
+  "noWalletFile": true,
+  "noLocalState": true,
+  "savedPublicRunLoaded": true,
+  "signerReady": false,
+  "visibleInvoices": 4,
+  "activeQuote": "0x62940cbd860e610e886e9c13c536856224d60602ddee8b3f38f27f56baa741a7"
+}

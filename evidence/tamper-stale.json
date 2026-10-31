@@ -1,0 +1,61 @@
+{
+  "kind": "stale",
+  "status": "rejected",
+  "reason": "ResponseTooOld",
+  "at": 1793414721,
+  "quoteId": "0xae3e840e05241c7d8c89d2cdb81ceb8d3393827c9a0306017493e4ed43437654",
+  "response": {
+    "airnode": "0xE70f1e8b22a21e4Bb5188918a3033341b281E4c0",
+    "requestHash": "0x5e2ded887668087a5a3151af552932c0ab022114f63c38bb7a147390c4fe23ec",
+    "timestamp": "1793414455",
+    "data": "{\"usdc\":1.000915,\"usdcUpdatedAt\":1793414381154,\"usdt\":0.9990675,\"usdtUpdatedAt\":1793414424670}",
+    "signature": "0xf6f5ad69b051460244f293346543455275bc08366c079feb2460499ebaab7708736a2865e0cd098a82bf8f9c879e6094e3ec863af641d3b7c2723e562439ead31b"
+  },
+  "before": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "215082774"
+    },
+    "buyer": {
+      "usdc": "900000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "100000000",
+      "usdt": "9917226"
+    },
+    "reserve": "25000000",
+    "totalReserved": "25000000"
+  },
+  "after": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "215082774"
+    },
+    "buyer": {
+      "usdc": "900000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "100000000",
+      "usdt": "9917226"
+    },
+    "reserve": "25000000",
+    "totalReserved": "25000000"
+  },
+  "protectedStateUnchanged": true,
+  "txHash": "0x55fab4bd398ca3dc30d9dd5eaef1f8177b12f5993151f28c07d9db73bfb3b1c6",
+  "receipt": {
+    "transactionHash": "0x55fab4bd398ca3dc30d9dd5eaef1f8177b12f5993151f28c07d9db73bfb3b1c6",
+    "blockNumber": "52464250",
+    "status": "reverted",
+    "gasUsed": "40710",
+    "effectiveGasPrice": "6000000",
+    "executionGasWei": "244260000000",
+    "l1FeeWei": "1796",
+    "gasCostWei": "244260001796",
+    "contractAddress": null,
+    "logs": []
+  },
+  "method": "deployed transaction (reverted; gas spent)"
+}

@@ -1,0 +1,35 @@
+{
+  "network": 84532,
+  "contract": "0x0adccdd8461696284b9b728267a23a4e38163ab2",
+  "valid": "0x22c0cb79051b3c8b8d922dc79e5c89ce1c3afa983ce13eb93bb7f929087833da",
+  "positiveTopupUsdt": "9917226",
+  "tamper": [
+    {
+      "kind": "edited",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0xfb6e3a4783c3a691d64b2505192b7b26e7a64a79ebe75d45283268f5a2037f49",
+      "protectedStateUnchanged": true
+    },
+    {
+      "kind": "stale",
+      "reason": "ResponseTooOld",
+      "txHash": "0x55fab4bd398ca3dc30d9dd5eaef1f8177b12f5993151f28c07d9db73bfb3b1c6",
+      "protectedStateUnchanged": true
+    },
+    {
+      "kind": "wrong-request",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0x35a0dba8c41821a4562279ded2c7f9d3fdc879b83a8cb4beb2b4020402bc9ea3",
+      "protectedStateUnchanged": true
+    },
+    {
+      "kind": "wrong-signer",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0x0c7586f35c6a0c7982cf136aa4b09b59497bef2e106947d1e02ebae19c59ac2d",
+      "protectedStateUnchanged": true
+    }
+  ],
+  "duplicate": true,
+  "restart": true,
+  "blockedBudget": true
+}

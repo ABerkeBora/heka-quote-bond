@@ -1,0 +1,15 @@
+{
+  "contract": "0x0adccdd8461696284b9b728267a23a4e38163ab2",
+  "network": 84532,
+  "bytecodeMatchesLocalArtifact": true,
+  "immutableNormalization": "Solc immutable reference byte ranges zeroed in both codes",
+  "sourceSha256": "f134fe53e319f3c8f4a8eedd2b008c6524693429572283a898e2d26a01dab9b8",
+  "pinned": {
+    "airnode": "0xE70f1e8b22a21e4Bb5188918a3033341b281E4c0",
+    "requestHash": "0x5e2ded887668087a5a3151af552932c0ab022114f63c38bb7a147390c4fe23ec",
+    "usdc": "0x9836ce4422c66FF3D1EeD23345349D4fAD2A7341",
+    "usdt": "0x72a335C7739D000d5AaA49239f60594F03a55B0c"
+  },
+  "checkedAt": 1793414874,
+  "explorerVerification": "Not claimed; local RPC bytecode comparison"
+}
