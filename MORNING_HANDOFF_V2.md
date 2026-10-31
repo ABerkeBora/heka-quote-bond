@@ -53,3 +53,5 @@ Tüm yeni kanıtlar `evidence/v2/` altında. Bağımsız incelemede policy hash'
 `REVIEW_SUMMARY.json` iki READY linki, doğrulama zamanını ve129 test/gerçek işlem dosyalarını birleştirir. V1 baseline974ae378; V2 incelenen uygulama commit’i0bf86755. ÖneriV2, demoRiskmedium: merchant’ın minimum karşılığını uygulayan açık kabul/ret örneği daha güçlü; ek kabul adımı ve RPC/freshness bağımlılığı açıklanmalı. Video/Devfolio kullanıcıda; dış merchant pilotuPENDING.
 
 Public `codex/next` codepush ve `v1-baseline` tag doğrulandı; GitHub author/committer ABerkeBora. Son yerel production smoke testinde iki route/ayrı deployment ve iki izole signer hazır. Sunucu3104’te açık bırakıldı.
+
+Goal kapanışı 2026-10-31T03:52:53.000Z: update_goal ve ardından gerçek get_goal sonucu COMPLETE. Uygulama hedefi24dk6sn içinde tamamlandı; yukarıdaki insan/pilot adımları ayrıca işaretlidir.
