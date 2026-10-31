@@ -10,4 +10,4 @@
 - Numbers use integer BigInt input. Number is used only for bounded chart percentages and time formatting. Missing data uses an em dash; zero remains zero.
 - Source lint: 0 FAIL; accepted warnings are Geist Mono for literal IDs and raw response code, and repeated em dashes representing missing fields. All body text is at least 11px.
 - Fonts: Geist and Geist Mono loaded locally, SIL Open Font licenses in web/assets.
-- Browser QA pending backend integration. Inspector script uses standalone browser automation, so supported CUA browser screenshots/DOM inspection will replace it under the session browser-use rules.
+- Browser QA completed through CUA at1440/768/390px; see UI_QA.md. The standalone inspector was replaced under the session browser-use rule.

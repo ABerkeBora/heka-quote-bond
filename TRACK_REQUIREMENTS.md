@@ -37,7 +37,7 @@ These negative transactions spent test gas. The unchanged-balance assertion conc
 | Contract address and network | **PASS** | README and deployment manifest include chain84532 and explorer links |
 | Judges can submit their own raw responses | **PASS** | `scripts/prepare-judge.mjs`, `scripts/submit-response.mjs`, README commands. Deployed contract decides; no off-chain signature gate in submit script. UI additionally replays recorded historical blocks, clearly labelled read-only. |
 | Description: problem, build, mechanics, data reliance, forgery harm, unavailable desired data | **PASS** for prepared artifact | `SUBMISSION_DRAFT.md`; must be entered in Devfolio by user if selected |
-| Public repository and setup/run README | **PENDING** at recheck | Repository created at https://github.com/ABerkeBora/heka-quote-bond; final push verification recorded in MORNING_HANDOFF |
+| Public repository and setup/run README | **PASS** | https://github.com/ABerkeBora/heka-quote-bond is PUBLIC; code commit036db7d pushed and remote branch verified; author/committer map toABerkeBora. Clean source-only npm ci + forge build + production build/start passed without env/wallet/local state. |
 | Actual video≤2.5min, with valid action then four rejects | **PENDING** |150s outline in `PRESENTATION.md`; actual recording still needed. No claim of complete submission. |
 | Devfolio entry before deadline | **PENDING** | User has not authorized competition submission. Deadline reverified **31 October2026 15:00 Europe/Berlin**; one submission per team, up to3 partner tracks. |
 
@@ -61,4 +61,4 @@ Signed-price guards, conditional payments and protocol safeguards are examples, 
 
 ## Remaining qualification and trust limits
 
-The technical integration and four required rejection cases have actual evidence. The **submission package is incomplete until the user records the video and submits the chosen project**. Public push must be verified before the repository row becomes PASS. Signature authenticity does not prove upstream price truth, token backing, redemption or service quality. First fresh snapshot timing risk and local test-key custody are documented in README and `contracts/SECURITY.md`.
+The technical integration and four required rejection cases have actual evidence. The **submission package is incomplete until the user records the video and submits the chosen project**. Public push is verified. Signature authenticity does not prove upstream price truth, token backing, redemption or service quality. First fresh snapshot timing risk and local test-key custody are documented in README and `contracts/SECURITY.md`.

@@ -51,4 +51,8 @@ Gas guard0.0002testETH için buyer approval+mandate+payment'ı toplar; execution
 
 ## Teslim kaydı
 
-Public repository/push ve production smoke testinin kesin sonucu son commit ile güncellenecek. Goal yalnız bu teslim doğrulandıktan sonra complete yapılacak.
+31 Ekim 2026, 03:59 Europe/Berlin: repo PUBLIC; `codex/build` default branch. Uygulama commit’i `036db7d` push edildi ve remote hash eşleşmesi doğrulandı. GitHub commit author/committer hesabı ABerkeBora; repository-local doğru noreply kimliği kullanıldı. Secret taraması PASS; yalnız bu projenin kendi repo root’una commit yapıldı.
+
+Temiz source-only kopyada `.env`, wallet ve yerel state olmadan `npm ci`, `forge build`, production build/start PASS; public gerçek geçmiş yüklendi ve signer devre dışıydı. `evidence/clean-start.json`. Son normal çalışma kendi izole wallet yapılandırmasıyla production server olarak127.0.0.1:3104’te açık. Sekiz temel receipt son RPC kontrolünde yeniden doğrulandı: `evidence/final-receipt-check.json`.
+
+24 Node +34 contract testi, build, audit ve browser QA tamamlandı. Teknik entegrasyon blocker’ı yok. Goal, bu teslim kaydının son push doğrulamasından sonra complete olarak kapatılır; pending video/Devfolio kullanıcıya açıkça bırakılır.
