@@ -20,3 +20,12 @@ This repository owns Quote Bond only. Use port **3104** and isolated `.local/` s
 - UI English; morning handoff Turkish. Compact invoice desk, copper shortfall data on flat neutral surfaces. Main task available immediately. Use the applicable TasteSkill app-screen workflow if installed; inspect real browser at1440/768/390px. Do not invent balances, transactions, customer names or success states.
 - Run `npm test`, `forge test`, production build and browser end-to-end checks for material changes. Keep README, environment example, lockfile, presentation and morning handoff current. Each mandatory track item must be PASS/PENDING/FAIL/BLOCKED with actual evidence. Do not claim complete submission while the video is pending.
 - Public repository: `ABerkeBora/heka-quote-bond`. Commits must use verified ABerkeBora identity, configured locally. Inspect the staged tree for secrets before every publication.
+
+## Isolated merchant coverage extension
+
+- V1 stays at `/` and immutable `v1-baseline` commit974ae378. V2 is `/next` on `codex/next`; selected sponsor remains API3. Read `TRACK_REQUIREMENTS_V2.md`, preserve its start/finish rule gates.
+- V2 uses `/api/next/*`, `.local/v2/`, `evidence/v2/`, separate0600 wallets, tokens and `QuoteBondCoverage`. Never consume V1 reserves/tokens or overwrite V1 receipts. Share readonly source/math/service helpers and existing styles; original signing engine/screen/source/tests remain byte-protected by regression tests.
+- Merchant on-chain acceptance locks the exact policy hash and `maxUncoveredUSD18`;0 means full only. Buyer authority cannot widen it. Signature checks and exact integer math precede the inclusive coverage comparison; excessive gap reverts before transfers/state consumption. Protect absent/wrong-role/changed/cross-quote/expired acceptance too.
+- Agent must stop before a new payment signature/broadcast for valid-price insufficient coverage. Record direct deployed rejection separately, including spent revert gas. Prove full/explicit partial payments, duplicate and merchant/payment restart reconciliation, and V1 regression.
+- Merchant acceptance gas is capped separately at0.00005testETH; combined buyer approval+mandate+payment guard remains0.0002testETH with buffered L1 estimates and actual L1 fee accounting. These are local controls, not general on-chain wallet gas bounds.
+- Use `NEXT_GOAL_STATUS.md`, `MORNING_HANDOFF_V2.md` and compact `REVIEW_SUMMARY.json` for final comparison. Do not declare an external merchant pilot or competition submission that did not happen.

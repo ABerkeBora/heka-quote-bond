@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-31T03:44:40.068Z",
+  "quoteId": "0xd2d5687ddfb257e9072219d25a108fba036d9f7f17df45b27c444bffcb118580",
+  "results": [
+    {
+      "kind": "edited",
+      "expected": "NotSignedByAirnode",
+      "exitCode": 1,
+      "output": "REJECTED: NotSignedByAirnode",
+      "method": "current deployed V2 eth_call from documented submit script"
+    },
+    {
+      "kind": "stale",
+      "expected": "ResponseTooOld",
+      "exitCode": 1,
+      "output": "REJECTED: ResponseTooOld",
+      "method": "current deployed V2 eth_call from documented submit script"
+    },
+    {
+      "kind": "wrong-request",
+      "expected": "NotSignedByAirnode",
+      "exitCode": 1,
+      "output": "REJECTED: NotSignedByAirnode",
+      "method": "current deployed V2 eth_call from documented submit script"
+    },
+    {
+      "kind": "wrong-signer",
+      "expected": "NotSignedByAirnode",
+      "exitCode": 1,
+      "output": "REJECTED: NotSignedByAirnode",
+      "method": "current deployed V2 eth_call from documented submit script"
+    }
+  ],
+  "noBroadcast": true
+}

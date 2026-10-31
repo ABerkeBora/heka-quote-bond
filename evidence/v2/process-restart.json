@@ -1,0 +1,12 @@
+{
+  "intent": "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+  "actualNewNodeProcess": true,
+  "merchantReceiptRecovered": true,
+  "paymentReceiptRecovered": true,
+  "payment": "0xf8bd1654e25094757f64fb4c2bbef0295e0d5af799786078aae3c2467a03669f",
+  "acceptance": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+  "gasRecovered": "1966470002435",
+  "journalCountBefore": 36,
+  "journalCountAfter": 36,
+  "noNewTransaction": true
+}

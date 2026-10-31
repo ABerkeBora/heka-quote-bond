@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-10-31T03:45:51.653Z",
+  "chainId": 84532,
+  "results": [
+    {
+      "kind": "contract",
+      "hash": "0x9017358d9f26c9f7dbef3a088647bfe127e2e57123659615815002903edb2b3a",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52478643"
+    },
+    {
+      "kind": "full acceptance",
+      "hash": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52479305"
+    },
+    {
+      "kind": "full payment",
+      "hash": "0xf8bd1654e25094757f64fb4c2bbef0295e0d5af799786078aae3c2467a03669f",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52479350"
+    },
+    {
+      "kind": "partial acceptance",
+      "hash": "0x06f03966fdef302348efa1bc2e02a0f7a121ea6537bfc17cfcf95962addfc12d",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52479395"
+    },
+    {
+      "kind": "partial payment",
+      "hash": "0x36568d01ff15c8294a3f4ede918eabc9622017b45c99860ca7172e61b0fc0357",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52479439"
+    },
+    {
+      "kind": "browser acceptance",
+      "hash": "0xf4ab2658710cb8063229b73400be889f8e50781c0789906ccdbb629920c01efd",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52480444"
+    },
+    {
+      "kind": "browser payment",
+      "hash": "0xe6dfd570c685f67ee728a32c4a97e71e1bbcd4802303c0291cf9857058621e30",
+      "expected": "success",
+      "status": "success",
+      "blockNumber": "52480617"
+    },
+    {
+      "kind": "coverage",
+      "hash": "0x402739633ab7716188eef1e25c5f3649167b70d0ab223ce8cee99d5cc1ac3eb6",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52479264"
+    },
+    {
+      "kind": "unaccepted",
+      "hash": "0x6b32cda8e707d2ce98858ea0ab772f8d6664354592b500b44bd4d9d6bc8becc2",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52479199"
+    },
+    {
+      "kind": "edited",
+      "hash": "0x6671de6fbaa47ab101bfd96977dc13c43bc61f394183cb328b1fcbe94c9ef15c",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52479523"
+    },
+    {
+      "kind": "stale",
+      "hash": "0xc5e28aeba24d1031146dbcd8644668993910b4af82cefc2461db72920d172c74",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52479552"
+    },
+    {
+      "kind": "wrong-request",
+      "hash": "0xa2ed4a30a3cc145b414a289aad95efdfcccd2afb4b2869dc555aa26e538cec19",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52479577"
+    },
+    {
+      "kind": "wrong-signer",
+      "hash": "0xdd4686d36b628b7ca0734a52125ee7ca090b769d48bc256e3379145eda63cbd8",
+      "expected": "reverted",
+      "status": "reverted",
+      "blockNumber": "52479601"
+    }
+  ]
+}

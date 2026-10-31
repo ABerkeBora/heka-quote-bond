@@ -15,7 +15,16 @@
     "submit-response": "node scripts/submit-response.mjs",
     "recover-lock": "node scripts/recover-lock.mjs",
     "judge:prepare": "node scripts/prepare-judge.mjs",
-    "wallets:init": "node scripts/init-wallets.mjs"
+    "wallets:init": "node scripts/init-wallets.mjs",
+    "v2:wallets:init": "node scripts/v2-init-wallets.mjs",
+    "v2:fund-gas": "node scripts/v2-fund-gas.mjs",
+    "v2:deploy": "node scripts/v2-deploy.mjs",
+    "v2:recover-lock": "node scripts/v2-recover-lock.mjs",
+    "v2:evidence": "node scripts/v2-evidence.mjs",
+    "v2:submit-response": "node scripts/v2-submit-response.mjs",
+    "v2:judge:prepare": "node scripts/v2-judge-prepare.mjs",
+    "v2:verify": "node scripts/v2-verify-deployment.mjs",
+    "v2:regression": "node scripts/v2-regression.mjs"
   },
   "dependencies": {
     "@openzeppelin/contracts": "5.6.1",

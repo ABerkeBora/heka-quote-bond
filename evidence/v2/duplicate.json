@@ -1,0 +1,44 @@
+{
+  "intent": "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+  "noNewTransaction": true,
+  "before": {
+    "buyer": {
+      "usdc": "800000000",
+      "usdt": "0"
+    },
+    "merchant": {
+      "usdc": "200000000",
+      "usdt": "34929256"
+    },
+    "platform": {
+      "usdc": "0",
+      "usdt": "140070744"
+    },
+    "reserve": {
+      "usdc": "0",
+      "usdt": "75000000"
+    },
+    "totalReserved": "75000000"
+  },
+  "after": {
+    "buyer": {
+      "usdc": "800000000",
+      "usdt": "0"
+    },
+    "merchant": {
+      "usdc": "200000000",
+      "usdt": "34929256"
+    },
+    "platform": {
+      "usdc": "0",
+      "usdt": "140070744"
+    },
+    "reserve": {
+      "usdc": "0",
+      "usdt": "75000000"
+    },
+    "totalReserved": "75000000"
+  },
+  "journalCountBefore": 35,
+  "journalCountAfter": 35
+}

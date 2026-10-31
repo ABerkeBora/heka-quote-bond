@@ -1,0 +1,466 @@
+/* The V1 sheet and identity are shared. Every extension rule stays under this route root. */
+.next-app .next-version-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 12px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.next-app .next-version-links a {
+  color: var(--muted);
+}
+.next-app .next-version-links a[aria-current="page"] {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #aeb6b0;
+}
+.next-app .network {
+  margin-left: 18px;
+}
+.next-app .title-row {
+  align-items: start;
+}
+.next-app .title-row p {
+  max-width: 760px;
+  line-height: 1.5;
+}
+.next-app .workspace {
+  grid-template-columns: minmax(0, 1fr) 350px;
+  align-items: stretch;
+}
+.next-app .invoice-panel,
+.next-app .mandate-panel {
+  padding: 20px;
+}
+.next-app .invoice-summary {
+  margin: 12px 0;
+}
+.next-app .debt {
+  font-size: 34px;
+}
+.next-app .merchant-floor-tick {
+  position: absolute;
+  top: -5px;
+  height: 25px;
+  width: 1px;
+  background: #4f5652;
+  border-left: 1px solid white;
+  z-index: 2;
+}
+.next-app .waterfall-track.empty .merchant-floor-tick {
+  height: 13px;
+}
+.next-app .next-coverage-comparison {
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 12px;
+}
+.next-app .next-coverage-pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.next-app .next-coverage-pair b {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-left: 5px;
+}
+.next-app .next-coverage-pair b.negative-ink {
+  color: var(--negative);
+}
+.next-app .next-coverage-comparison p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.next-app .next-coverage-comparison.is-blocked p {
+  color: var(--negative);
+}
+.next-app .next-term-controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+.next-app .next-term-controls .quote-choice {
+  margin-top: 0;
+}
+.next-app .next-policy-panel {
+  display: flex;
+  flex-direction: column;
+}
+.next-app .next-merchant-limits {
+  margin-top: 14px;
+}
+.next-app .next-merchant-limits .kv {
+  padding: 6px 0;
+}
+.next-app .next-merchant-limits .kv:first-child > div {
+  font-weight: 500;
+  color: var(--text);
+}
+.next-app .next-acceptance {
+  font-size: 12px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 10px;
+  margin-top: 8px;
+  border-top: 1px solid var(--rule);
+}
+.next-app .next-acceptance > span {
+  color: var(--positive);
+}
+.next-app .next-payer-section {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.next-app .next-payer-section > .section-line {
+  margin-bottom: 10px;
+}
+.next-app .next-payer-section .kv {
+  padding: 5px 0;
+}
+.next-app .next-payer-section > p {
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.next-app .mandate-action {
+  margin-top: auto;
+  padding-top: 16px;
+}
+.next-app .next-new-invoice {
+  margin-top: 12px;
+}
+.next-app .next-approval-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-bottom: 1px solid var(--border);
+  padding: 17px 0;
+}
+.next-app .next-approval-flow > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.next-app .next-state-dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #adb7af;
+  border-radius: 50%;
+  flex: none;
+}
+.next-app .next-state-dot.is-done {
+  background: #343a36;
+  border-color: #343a36;
+}
+.next-app .next-state-dot.is-blocked {
+  background: var(--negative);
+  border-color: var(--negative);
+}
+.next-app .next-history-list {
+  padding: 0 24px 8px;
+}
+.next-app .next-history-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px 104px 70px;
+  gap: 16px;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding: 13px 0;
+  font-size: 12px;
+}
+.next-app .next-history-open {
+  border: 0;
+  background: none;
+  text-align: left;
+  padding: 0;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.next-app .next-history-open:hover > span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.next-app .next-history-open > span {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.next-app .next-history-open > code {
+  font-size: 11px;
+  color: var(--muted);
+}
+.next-app .next-history-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+.next-app .next-history-row > .badge {
+  justify-self: end;
+}
+.next-app .next-history-row > a,
+.next-app .next-history-row > span:last-child {
+  justify-self: end;
+}
+.next-app footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (min-width: 901px) {
+  .next-app .invoice-panel {
+    padding-bottom: 18px;
+  }
+  .next-app .waterfall {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .next-app .rate-sheet {
+    border: 0;
+    padding-top: 0;
+  }
+  .next-app .invoice-foot {
+    margin-top: 14px;
+  }
+  .next-app .mandate-action {
+    border-top: 1px solid var(--rule);
+  }
+}
+@media (max-width: 1100px) {
+  .next-app .scope {
+    display: none;
+  }
+  .next-app .next-version-links {
+    gap: 12px;
+  }
+  .next-app .network {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .next-app .workspace {
+    grid-template-columns: 1fr;
+  }
+  .next-app .next-policy-panel {
+    display: block;
+  }
+  .next-app .mandate-action {
+    margin-top: 18px;
+    max-width: none;
+  }
+  .next-app .next-term-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  .next-app .next-merchant-limits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 28px;
+  }
+  .next-app .next-payer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 28px;
+  }
+  .next-app .next-payer-section > .section-line,
+  .next-app .next-payer-section > p {
+    grid-column: 1/-1;
+  }
+  .next-app #coverage-terms {
+    scroll-margin-top: 18px;
+  }
+  .next-app .next-coverage-comparison p {
+    max-width: none;
+  }
+}
+@media (max-width: 640px) {
+  .next-app .shell {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+  .next-app .brand {
+    font-size: 18px;
+  }
+  .next-app .network {
+    margin-left: auto;
+    font-size: 11px;
+    gap: 6px;
+  }
+  .next-app .next-version-links {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    gap: 22px;
+    padding-top: 4px;
+  }
+  .next-app .title-row {
+    display: block;
+  }
+  .next-app .title-meta {
+    margin-top: 12px;
+    justify-content: space-between;
+  }
+  .next-app .invoice-panel,
+  .next-app .mandate-panel {
+    padding: 18px 16px;
+  }
+  .next-app .debt {
+    font-size: 32px;
+  }
+  .next-app .invoice-summary {
+    margin-top: 22px;
+  }
+  .next-app .invoice-identity {
+    text-align: left;
+  }
+  .next-app .flow-amounts {
+    grid-template-columns: 1fr 1fr;
+  }
+  .next-app .flow-amounts > div:last-child {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .next-app .flow-amounts > div:last-child > .small {
+    display: none;
+  }
+  .next-app .flow-amounts > div:last-child > strong {
+    margin-left: auto;
+    font-size: 20px;
+  }
+  .next-app .next-coverage-comparison {
+    gap: 4px 12px;
+  }
+  .next-app .next-coverage-comparison strong {
+    font-size: 22px;
+  }
+  .next-app .next-coverage-comparison .small {
+    font-size: 11px;
+  }
+  .next-app .next-term-controls {
+    grid-template-columns: 1fr;
+  }
+  .next-app .next-merchant-limits,
+  .next-app .next-payer-section {
+    display: block;
+  }
+  .next-app .next-payer-section > .section-line {
+    margin-bottom: 10px;
+  }
+  .next-app .next-approval-flow {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 17px 0;
+  }
+  .next-app .next-history-list {
+    padding: 0 16px 8px;
+  }
+  .next-app .next-history-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px 14px;
+  }
+  .next-app .next-history-value {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .next-app .next-history-row > .badge {
+    justify-self: start;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .next-app .next-history-row > a,
+  .next-app .next-history-row > span:last-child {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .next-app .primary,
+  .next-app .secondary {
+    min-height: 44px;
+  }
+  .next-app .invoice-head {
+    align-items: start;
+  }
+  .next-app .invoice-head .badge {
+    margin-top: 2px;
+  }
+  .next-app .verification-section > details > summary > span:first-child {
+    display: block;
+  }
+  .next-app .verification-section > details > summary .small {
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.next-app .next-floor-key {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 0;
+}
+.next-app .next-floor-key i {
+  width: 2px;
+  height: 11px;
+  background: #4f5652;
+  border-left: 1px solid white;
+  display: inline-block;
+}
+
+.next-app .activity-section {
+  margin-top: 16px;
+}
+@media (max-width: 640px) {
+  .next-app .next-coverage-pair {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .next-app .next-coverage-pair > span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .next-app .next-coverage-pair > span:last-child {
+    text-align: right;
+  }
+  .next-app .next-coverage-pair b {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 901px) {
+  .next-app .rates {
+    margin-top: 10px;
+  }
+  .next-app .rates > div {
+    gap: 3px;
+  }
+  .next-app .rate-sheet h2 {
+    font-size: 14px;
+  }
+  .next-app .waterfall-scale .next-floor-key {
+    margin-top: 0;
+  }
+}

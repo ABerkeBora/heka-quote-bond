@@ -1,0 +1,87 @@
+{
+  "source": "0x8f196ba8Fa1ad4565fFAE759e6404Ac1cf78DB43",
+  "totalTestEthWei": "1400000000000000",
+  "transactions": {
+    "deployer": {
+      "to": "0xfFcA3b5BA97E84763A96840200882412Bee8Ef9c",
+      "value": "1000000000000000",
+      "receipt": {
+        "transactionHash": "0x39b43836502baad9bebdfd8b95e1c4e8045ba0e3ad8df0b121e822dd1b8577b7",
+        "blockNumber": "52478121",
+        "status": "success",
+        "gasUsed": "21000",
+        "effectiveGasPrice": "6000000",
+        "executionGasWei": "126000000000",
+        "l1FeeWei": "488",
+        "gasCostWei": "126000000488",
+        "contractAddress": null,
+        "logs": []
+      }
+    },
+    "buyer": {
+      "to": "0x2b376de436e47E22098E0Ae287E5ABA4594c5CD1",
+      "value": "200000000000000",
+      "receipt": {
+        "transactionHash": "0x8187df473c3ff699571b26c9f01c5736784b48de8fe697fa441e5c7a0c308958",
+        "blockNumber": "52478129",
+        "status": "success",
+        "gasUsed": "21000",
+        "effectiveGasPrice": "6000000",
+        "executionGasWei": "126000000000",
+        "l1FeeWei": "488",
+        "gasCostWei": "126000000488",
+        "contractAddress": null,
+        "logs": []
+      }
+    },
+    "counterparty": {
+      "to": "0xe7D2dBf13e0e252d719618Ba3eC69F79bf91C1c8",
+      "value": "200000000000000",
+      "receipt": {
+        "transactionHash": "0xd2bc93006c22d89f6f8ca3669c620bb438c6b89262a745101de9e15b228eeba0",
+        "blockNumber": "52478137",
+        "status": "success",
+        "gasUsed": "21000",
+        "effectiveGasPrice": "6000000",
+        "executionGasWei": "126000000000",
+        "l1FeeWei": "488",
+        "gasCostWei": "126000000488",
+        "contractAddress": null,
+        "logs": []
+      }
+    }
+  },
+  "v1TokenBalancesBefore": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "195248752"
+    },
+    "buyer": {
+      "usdc": "500000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "500000000",
+      "usdt": "54751248"
+    },
+    "reserve": "0",
+    "totalReserved": "0"
+  },
+  "v1TokenBalancesAfter": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "195248752"
+    },
+    "buyer": {
+      "usdc": "500000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "500000000",
+      "usdt": "54751248"
+    },
+    "reserve": "0",
+    "totalReserved": "0"
+  },
+  "v1TokensUnchanged": true
+}

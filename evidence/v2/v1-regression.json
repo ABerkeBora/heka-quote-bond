@@ -1,0 +1,44 @@
+{
+  "v1Commit": "974ae378b3e953d1dc8804c51ffb721133be70a7",
+  "tag": "v1-baseline",
+  "v1Url": "http://localhost:3104/",
+  "v2Url": "http://localhost:3104/next",
+  "distinctContractsTokensAndRoles": true,
+  "protectedV1FilesUnchanged": true,
+  "v1TokenReservesUnchanged": true,
+  "before": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "195248752"
+    },
+    "buyer": {
+      "usdc": "500000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "500000000",
+      "usdt": "54751248"
+    },
+    "reserve": "0",
+    "totalReserved": "0"
+  },
+  "after": {
+    "deployer": {
+      "usdc": "0",
+      "usdt": "195248752"
+    },
+    "buyer": {
+      "usdc": "500000000",
+      "usdt": "0"
+    },
+    "counterparty": {
+      "usdc": "500000000",
+      "usdt": "54751248"
+    },
+    "reserve": "0",
+    "totalReserved": "0"
+  },
+  "originalValidPaymentSimulatedAtHistoricalBlock": "52465743",
+  "simulationWasReadOnly": true,
+  "originalReceipt": "0xcc488ac491a2c9e371a2b370c0433baa0229373bd9dad831e2e28b257b17111d"
+}

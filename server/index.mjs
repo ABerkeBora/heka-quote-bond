@@ -1,6 +1,9 @@
 import { acquireRuntime } from "./store.mjs";
 acquireRuntime();
 import express from "express";
+import { createV2Router } from "./v2/router.mjs";
+import { acquireRuntime as acquireV2Runtime } from "./v2/store.mjs";
+acquireV2Runtime();
 import { createServer } from "node:http";
 import path from "node:path";
 import fs from "node:fs";
@@ -35,6 +38,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use(express.json({ limit: "32kb" }));
+app.use("/api/next", createV2Router());
 const safe = (e) =>
   String(e.shortMessage || e.message || "Operation failed").slice(0, 800);
 app.get("/api/state", async (req, res) => {

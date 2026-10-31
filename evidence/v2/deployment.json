@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "network": "Base Sepolia",
+  "chainId": 84532,
+  "contract": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+  "contractName": "QuoteBondCoverage",
+  "usdc": "0xc8f4d593e9efaa89519be60e51ff4a57257b2956",
+  "usdt": "0x04a454373418ae06c8be259e58abc0792a5477de",
+  "payer": "0x2b376de436e47E22098E0Ae287E5ABA4594c5CD1",
+  "merchant": "0xe7D2dBf13e0e252d719618Ba3eC69F79bf91C1c8",
+  "reserveFunder": "0xfFcA3b5BA97E84763A96840200882412Bee8Ef9c",
+  "explorer": "https://sepolia.basescan.org",
+  "deployedAt": 1793417597,
+  "signer": "0xE70f1e8b22a21e4Bb5188918a3033341b281E4c0",
+  "requestHash": "0x5e2ded887668087a5a3151af552932c0ab022114f63c38bb7a147390c4fe23ec",
+  "request": {
+    "operation": "latestFeeds",
+    "parameters": {
+      "name": "USDC/USD,USDT/USD"
+    },
+    "responseProjection": {
+      "usdc": "/USDC~1USD/value",
+      "usdcUpdatedAt": "/USDC~1USD/timestamp",
+      "usdt": "/USDT~1USD/value",
+      "usdtUpdatedAt": "/USDT~1USD/timestamp"
+    }
+  },
+  "contractSourceSha256": "531e8f872564136bde358bb16b266c2d2a250fbe74784d0abda5deeb3216a291",
+  "receipts": {
+    "usdc": {
+      "transactionHash": "0x8b15509f4496add19e410fe2d9affd0e168e06276232b03e849131a060cea62a",
+      "blockNumber": "52478621",
+      "status": "success",
+      "gasUsed": "511770",
+      "effectiveGasPrice": "6000000",
+      "executionGasWei": "3070620000000",
+      "l1FeeWei": "9093",
+      "gasCostWei": "3070620009093",
+      "contractAddress": "0xc8f4d593e9efaa89519be60e51ff4a57257b2956",
+      "logs": []
+    },
+    "usdt": {
+      "transactionHash": "0x3b3d88bb682d499e4050aabc55f61fd2623036cb8ebb94262fc3fa96c1c85591",
+      "blockNumber": "52478632",
+      "status": "success",
+      "gasUsed": "511770",
+      "effectiveGasPrice": "6000000",
+      "executionGasWei": "3070620000000",
+      "l1FeeWei": "9093",
+      "gasCostWei": "3070620009093",
+      "contractAddress": "0x04a454373418ae06c8be259e58abc0792a5477de",
+      "logs": []
+    },
+    "bond": {
+      "transactionHash": "0x9017358d9f26c9f7dbef3a088647bfe127e2e57123659615815002903edb2b3a",
+      "blockNumber": "52478643",
+      "status": "success",
+      "gasUsed": "3012318",
+      "effectiveGasPrice": "6000000",
+      "executionGasWei": "18073908000000",
+      "l1FeeWei": "46521",
+      "gasCostWei": "18073908046521",
+      "contractAddress": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+      "logs": []
+    },
+    "mintBuyer": {
+      "transactionHash": "0x75c017e3b0677eb56bd14d1f292db92965f9ace8b69dadf6604c37304fc58b62",
+      "blockNumber": "52478654",
+      "status": "success",
+      "gasUsed": "68128",
+      "effectiveGasPrice": "6000000",
+      "executionGasWei": "408768000000",
+      "l1FeeWei": "554",
+      "gasCostWei": "408768000554",
+      "contractAddress": null,
+      "logs": [
+        {
+          "address": "0xc8f4d593e9efaa89519be60e51ff4a57257b2956",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "0x0000000000000000000000002b376de436e47e22098e0ae287e5aba4594c5cd1"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000003b9aca00",
+          "blockHash": "0xc8f9f2a4b16e5193879d75438523ee97a7db2b15d9c67bc2fd30f20ed4873bed",
+          "blockNumber": "52478654",
+          "blockTimestamp": "1793417599",
+          "transactionHash": "0x75c017e3b0677eb56bd14d1f292db92965f9ace8b69dadf6604c37304fc58b62",
+          "transactionIndex": 2,
+          "logIndex": 0,
+          "removed": false,
+          "blockTimestampMs": "0x1a19004da70"
+        }
+      ]
+    },
+    "mintReserve": {
+      "transactionHash": "0x81b35937a9e079ac64a76cb6baf200c2cd9a5a6d868d84405a630b9c577b32fd",
+      "blockNumber": "52478665",
+      "status": "success",
+      "gasUsed": "68128",
+      "effectiveGasPrice": "6000000",
+      "executionGasWei": "408768000000",
+      "l1FeeWei": "554",
+      "gasCostWei": "408768000554",
+      "contractAddress": null,
+      "logs": [
+        {
+          "address": "0x04a454373418ae06c8be259e58abc0792a5477de",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x0000000000000000000000000000000000000000000000000000000000000000",
+            "0x000000000000000000000000ffca3b5ba97e84763a96840200882412bee8ef9c"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000ee6b280",
+          "blockHash": "0xfe7be668e7308282a8e4a8eb43679a3036bcf7a908a64f574da4979da53d2fc4",
+          "blockNumber": "52478665",
+          "blockTimestamp": "1793417601",
+          "transactionHash": "0x81b35937a9e079ac64a76cb6baf200c2cd9a5a6d868d84405a630b9c577b32fd",
+          "transactionIndex": 2,
+          "logIndex": 0,
+          "removed": false,
+          "blockTimestampMs": "0x1a19004e308"
+        }
+      ]
+    }
+  }
+}

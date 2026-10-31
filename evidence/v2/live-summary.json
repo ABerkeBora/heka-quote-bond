@@ -1,0 +1,45 @@
+{
+  "chainId": 84532,
+  "contract": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+  "merchant": "0xe7D2dBf13e0e252d719618Ba3eC69F79bf91C1c8",
+  "strictBlocked": "0xd2d5687ddfb257e9072219d25a108fba036d9f7f17df45b27c444bffcb118580",
+  "coverageRejection": "0x402739633ab7716188eef1e25c5f3649167b70d0ab223ce8cee99d5cc1ac3eb6",
+  "full": {
+    "quoteId": "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+    "txHash": "0xf8bd1654e25094757f64fb4c2bbef0295e0d5af799786078aae3c2467a03669f",
+    "uncoveredUsd18": "0"
+  },
+  "partial": {
+    "quoteId": "0xb5a664d3224bf1944e07b0677f20c164f32eccbbafa9b717614d204d4bdcfafb",
+    "txHash": "0x36568d01ff15c8294a3f4ede918eabc9622017b45c99860ca7172e61b0fc0357",
+    "uncoveredUsd18": "14943303981887680000",
+    "maxUncoveredUsd18": "20000000000000000000"
+  },
+  "oracle": [
+    {
+      "kind": "edited",
+      "status": "rejected",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0x6671de6fbaa47ab101bfd96977dc13c43bc61f394183cb328b1fcbe94c9ef15c"
+    },
+    {
+      "kind": "stale",
+      "status": "rejected",
+      "reason": "ResponseTooOld",
+      "txHash": "0xc5e28aeba24d1031146dbcd8644668993910b4af82cefc2461db72920d172c74"
+    },
+    {
+      "kind": "wrong-request",
+      "status": "rejected",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0xa2ed4a30a3cc145b414a289aad95efdfcccd2afb4b2869dc555aa26e538cec19"
+    },
+    {
+      "kind": "wrong-signer",
+      "status": "rejected",
+      "reason": "NotSignedByAirnode",
+      "txHash": "0xdd4686d36b628b7ca0734a52125ee7ca090b769d48bc256e3379145eda63cbd8"
+    }
+  ],
+  "duplicate": true
+}

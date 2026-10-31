@@ -1,0 +1,15 @@
+{
+  "chainId": 84532,
+  "contract": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+  "bytecodeMatchesLocalArtifact": true,
+  "immutableSlotsNormalized": true,
+  "sourceSha256": "531e8f872564136bde358bb16b266c2d2a250fbe74784d0abda5deeb3216a291",
+  "pinned": {
+    "airnode": "0xE70f1e8b22a21e4Bb5188918a3033341b281E4c0",
+    "requestHash": "0x5e2ded887668087a5a3151af552932c0ab022114f63c38bb7a147390c4fe23ec",
+    "usdc": "0xc8F4d593e9EfaA89519bE60E51fF4a57257B2956",
+    "usdt": "0x04A454373418aE06C8bE259E58ABC0792a5477de"
+  },
+  "checkedAt": "2026-10-31T03:41:10.772Z",
+  "explorerVerification": "Not claimed; RPC runtime bytecode comparison"
+}

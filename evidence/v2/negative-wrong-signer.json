@@ -1,0 +1,121 @@
+{
+  "kind": "wrong-signer",
+  "contract": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+  "quoteId": "0x7421ccec5618307ad5d9ddc1c8227b8544a0c36d38cc89eeb8f49759c0b208ec",
+  "response": {
+    "airnode": "0xE70f1e8b22a21e4Bb5188918a3033341b281E4c0",
+    "requestHash": "0x5e2ded887668087a5a3151af552932c0ab022114f63c38bb7a147390c4fe23ec",
+    "timestamp": "1793417786",
+    "data": "{\"usdc\":1.000825,\"usdcUpdatedAt\":1793417783926,\"usdt\":0.9990678407244928,\"usdtUpdatedAt\":1793417724390}",
+    "signature": "0x5dded1969f07f7b453355dda59f16bf2c6a0ba58d79d73bcaacab99b22155eba7ff886bc139cc8a0f6baf8d3744d5d3c8446fa9e64617e85e8c3879a82a904771b"
+  },
+  "error": {
+    "abiItem": {
+      "type": "error",
+      "name": "NotSignedByAirnode",
+      "inputs": [
+        {
+          "name": "signer",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    "args": [
+      "0x5245313e7b268c391C53b20EA7e7a9224097FDB5"
+    ],
+    "errorName": "NotSignedByAirnode"
+  },
+  "expected": "NotSignedByAirnode",
+  "receipt": {
+    "transactionHash": "0xdd4686d36b628b7ca0734a52125ee7ca090b769d48bc256e3379145eda63cbd8",
+    "blockNumber": "52479601",
+    "status": "reverted",
+    "gasUsed": "43030",
+    "effectiveGasPrice": "6000000",
+    "executionGasWei": "258180000000",
+    "l1FeeWei": "1188",
+    "gasCostWei": "258180001188",
+    "contractAddress": null,
+    "logs": []
+  },
+  "txHash": "0xdd4686d36b628b7ca0734a52125ee7ca090b769d48bc256e3379145eda63cbd8",
+  "before": {
+    "buyer": {
+      "usdc": "800000000",
+      "usdt": "0"
+    },
+    "merchant": {
+      "usdc": "200000000",
+      "usdt": "34929256"
+    },
+    "platform": {
+      "usdc": "0",
+      "usdt": "165070744"
+    },
+    "reserve": {
+      "usdc": "0",
+      "usdt": "50000000"
+    },
+    "totalReserved": "50000000"
+  },
+  "after": {
+    "buyer": {
+      "usdc": "800000000",
+      "usdt": "0"
+    },
+    "merchant": {
+      "usdc": "200000000",
+      "usdt": "34929256"
+    },
+    "platform": {
+      "usdc": "0",
+      "usdt": "165070744"
+    },
+    "reserve": {
+      "usdc": "0",
+      "usdt": "50000000"
+    },
+    "totalReserved": "50000000"
+  },
+  "quoteBefore": {
+    "payer": "0x2b376de436e47E22098E0Ae287E5ABA4594c5CD1",
+    "beneficiary": "0xe7D2dBf13e0e252d719618Ba3eC69F79bf91C1c8",
+    "funder": "0xfFcA3b5BA97E84763A96840200882412Bee8Ef9c",
+    "quoteUsd18": "110000000000000000000",
+    "escrowAmount": "100000000",
+    "reservedUsdt": "25000000",
+    "createdAt": "1793417762",
+    "settleAfter": "1793417758",
+    "normalDeadline": "1793418658",
+    "hardDeadline": "1793420458",
+    "mandateExpiry": "1793419558",
+    "state": 2,
+    "paidUsdt": "0",
+    "uncoveredUsd18": "0",
+    "maxUncoveredUSD18": "0",
+    "merchantAcceptanceExpiry": "1793419558",
+    "merchantAccepted": true
+  },
+  "quoteAfter": {
+    "payer": "0x2b376de436e47E22098E0Ae287E5ABA4594c5CD1",
+    "beneficiary": "0xe7D2dBf13e0e252d719618Ba3eC69F79bf91C1c8",
+    "funder": "0xfFcA3b5BA97E84763A96840200882412Bee8Ef9c",
+    "quoteUsd18": "110000000000000000000",
+    "escrowAmount": "100000000",
+    "reservedUsdt": "25000000",
+    "createdAt": "1793417762",
+    "settleAfter": "1793417758",
+    "normalDeadline": "1793418658",
+    "hardDeadline": "1793420458",
+    "mandateExpiry": "1793419558",
+    "state": 2,
+    "paidUsdt": "0",
+    "uncoveredUsd18": "0",
+    "maxUncoveredUSD18": "0",
+    "merchantAcceptanceExpiry": "1793419558",
+    "merchantAccepted": true
+  },
+  "protectedStateUnchanged": true,
+  "at": 1793417790
+}

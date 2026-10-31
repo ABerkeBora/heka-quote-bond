@@ -4,6 +4,61 @@ An agent pays one accepted service invoice in test-USDC. A separately funded tes
 
 The working screen is an invoice desk, not a marketing page. It includes a concrete reconciliation report from explicitly sample ledger input, the payer mandate, payment composition, transaction trail and recorded rejection checks. The report's exact content hash is included in the invoice ID before funding. The contract governs payment, not report quality.
 
+
+## Compare the two invoice flows
+
+| Version | Open locally | Code/history | Behavior |
+|---|---|---|---|
+| V1 | [Original invoice desk](http://localhost:3104/) | [v1-baseline](https://github.com/ABerkeBora/heka-quote-bond/tree/v1-baseline), commit974ae378 | Pays the capped contribution and reports any remaining gap. |
+| V2 | [Merchant coverage](http://localhost:3104/next) | [codex/next](https://github.com/ABerkeBora/heka-quote-bond/tree/codex/next) | Pays only when the signed-price gap is within the merchant's immutable accepted limit. |
+
+V2 adds one customer choice, `maxUncoveredUSD18`:0 requires full coverage; a positive amount permits an explicitly accepted partial payment. V1's capped behavior remains intentional. Both routes share the same product identity and server on3104; contracts, test tokens, wallet roles, APIs, intent journals and local state are separate. See `BASELINE_V1.md` and `MORNING_HANDOFF_V2.md`.
+
+### V2 operation and evidence
+
+Prepare an invoice and review the exact coverage terms. **Accept coverage terms** records a transaction from the separate test merchant. **Authorize payer** records the bounded buyer mandate, then the agent fetches real Nodary prices and pays automatically or stops before broadcast. The contract independently enforces coverage before any protected transfer.
+
+- Contract: [0x1f92600480b282026e2bf4c252763566b4212cb6](https://sepolia.basescan.org/address/0x1f92600480b282026e2bf4c252763566b4212cb6), Base Sepolia84532.
+- Separate V2 test assets/roles: `evidence/v2/deployment.json`. Native gas allocation from the prepared V1 deployer was0.0014 testETH; V1 ERC20/reserve balances were unchanged (`gas-funding.json`). No V1 token is V2 collateral.
+- [Merchant full-only acceptance](https://sepolia.basescan.org/tx/0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514), [full payment](https://sepolia.basescan.org/tx/0xf8bd1654e25094757f64fb4c2bbef0295e0d5af799786078aae3c2467a03669f).
+- [Explicit partial payment](https://sepolia.basescan.org/tx/0x36568d01ff15c8294a3f4ede918eabc9622017b45c99860ca7172e61b0fc0357):14.94330398188768USD uncovered within the accepted20USD maximum.
+- [Valid-price insufficient coverage rejected](https://sepolia.basescan.org/tx/0x402739633ab7716188eef1e25c5f3649167b70d0ab223ce8cee99d5cc1ac3eb6). `agent-coverage-block.json` separately proves the agent produced no new signed payment/broadcast; protected tokens and state stayed unchanged. The direct reverted attempt spent test gas.
+- New V2 four-oracle-tamper receipts: `evidence/v2/live-summary.json`; accepted/binding, duplicate, actual new-process merchant+payment recovery, runtime-bytecode verification and V1 regression evidence are in the same directory.
+- Real UI acceptance→buyer delegation→automatic payment: `evidence/v2/browser-payment.json`; three viewport checks: `BROWSER_QA.md`.
+
+Merchant acceptance is an on-chain `acceptCoverage(id,expectedPolicyHash)` from the pinned beneficiary. The hash binds chain, contract, quote/job ID, both parties/funder, both tokens, oracle recipe, USD amount, exact USDC spend, reserve, uncovered limit and fixed windows/expiry. It cannot be widened by a buyer mandate or reused for another quote. The comparison is exact USD18, inclusive at the limit, after the existing integer floor/ceil/cap calculation. Acceptance and buyer expiry are exclusive; buyer authority ends no later than merchant acceptance.
+
+An unpaid coverage-blocked quote remains unconsumed; its reserve stays allocated until the fixed hard deadline. A new invoice never edits the old policy. Expired unpaid quotes can release their reserve through the existing void rule. Report acceptance/quality and real commercial merchant adoption are not proved by price verification: this is a real test-role transaction flow with explicitly sample service input, not an external merchant pilot.
+
+For your own V2 wallets, stop the server first:
+
+```sh
+npm run v2:wallets:init
+# Fund the three printed Base Sepolia addresses with testETH.
+# Alternatively, your own funded V1 test deployer can allocate the fixed0.0014testETH:
+npm run v2:fund-gas
+npm run v2:deploy
+npm run build
+npm start
+```
+
+V2 keys/journal/state live only in `.local/v2/` (keys0600); published evidence is under `evidence/v2/`. Both runtime locks prevent mutation scripts beside the server. `npm run v2:recover-lock` only removes locks for dead PIDs. No automatic top-up or new API fee exists.
+
+Judges can test a fresh raw response without an off-chain signature/coverage gate:
+
+```sh
+# Stop the server. This prepares/funds a new full-only test quote,
+# records actual merchant acceptance and buyer authority, but does not pay it.
+npm run v2:judge:prepare
+npm run v2:submit-response -- --file .local/v2/judge-response.json --quote QUOTE_ID
+# Optional actual broadcast; invalid calls still spend capped test gas.
+npm run v2:submit-response -- --file .local/v2/judge-response.json --quote QUOTE_ID --broadcast
+```
+
+Keep an original envelope unchanged for more than120seconds to test age. Saved edited/different-request/wrong-key examples are in `evidence/v2/negative-*.json`. A fresh acceptable response also needs both source observations within300seconds; wait for provider updates rather than weakening the policy. `v2:evidence` preserves the recorded complete suite; `v2:regression` repeats read-only V1 isolation/historical checks. The accepted report and V2 receipts remain distinct from V1's history.
+
+Current combined tests:41 Node +88 contract tests. Video recording/Devfolio submission remain human actions. Both versions are locally runnable; hosting/mainnet spending/submission were not performed.
+
 ## Run locally
 
 Prerequisites: Node.js24+, npm and [Foundry](https://getfoundry.sh/). No paid API account, model runtime or hosted service is required. Port **3104** is isolated to this app.

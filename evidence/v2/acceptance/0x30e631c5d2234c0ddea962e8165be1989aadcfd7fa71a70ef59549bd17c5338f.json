@@ -1,0 +1,341 @@
+{
+  "quote": {
+    "id": "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+    "jobId": "coverage-e918d0a9-e531-4a21-b7ed-23156fceec0a",
+    "status": "Funded",
+    "quoteUsd18": "110000000000000000000",
+    "maxUncoveredUsd18": "0",
+    "escrowUsdc": "100000000",
+    "reserveUsdt": "25000000",
+    "topupUsdt": "0",
+    "uncoveredUsd18": "0",
+    "escrowUsd18": "0",
+    "createdAt": 1793417723,
+    "settleAfter": 1793417723,
+    "normalDeadline": 1793418623,
+    "deadline": 1793420423,
+    "merchantAcceptanceExpiry": 1793419523,
+    "merchantAccepted": true,
+    "buyerAuthorized": false,
+    "serviceResult": {
+      "input": {
+        "sample": true,
+        "currency": "USD",
+        "amountUnit": "cent",
+        "rows": [
+          {
+            "invoiceId": "INV-0101",
+            "invoiceUsdCents": "4200",
+            "paidUsdCents": "4200"
+          },
+          {
+            "invoiceId": "INV-0102",
+            "invoiceUsdCents": "6800",
+            "paidUsdCents": "2500"
+          },
+          {
+            "invoiceId": "INV-0102",
+            "invoiceUsdCents": "6800",
+            "paidUsdCents": "2500"
+          },
+          {
+            "invoiceId": "INV-0103",
+            "invoiceUsdCents": "2500",
+            "paidUsdCents": "0"
+          },
+          {
+            "invoiceId": "INV-0104",
+            "invoiceUsdCents": "3000",
+            "paidUsdCents": "3500"
+          }
+        ]
+      },
+      "report": {
+        "schema": "quote-bond.invoice-reconciliation.v1",
+        "sampleInput": true,
+        "currency": "USD",
+        "amountUnit": "cent",
+        "inputSha256": "40196be4d8fa5abc4338a9d37a281af709c135c85f75603c5ac511955871fb2b",
+        "duplicatePolicy": "Identical duplicate invoice IDs are excluded from totals; conflicting duplicates are rejected.",
+        "summary": {
+          "inputRows": 5,
+          "uniqueInvoices": 4,
+          "duplicateRows": 1,
+          "invoiceUsdCents": "16500",
+          "paidUsdCents": "10200",
+          "dueUsdCents": "6800",
+          "overpaidUsdCents": "500",
+          "netDueUsdCents": "6300"
+        },
+        "invoices": [
+          {
+            "invoiceId": "INV-0101",
+            "invoiceUsdCents": "4200",
+            "paidUsdCents": "4200",
+            "dueUsdCents": "0",
+            "overpaidUsdCents": "0",
+            "status": "Paid"
+          },
+          {
+            "invoiceId": "INV-0102",
+            "invoiceUsdCents": "6800",
+            "paidUsdCents": "2500",
+            "dueUsdCents": "4300",
+            "overpaidUsdCents": "0",
+            "status": "Partially paid"
+          },
+          {
+            "invoiceId": "INV-0103",
+            "invoiceUsdCents": "2500",
+            "paidUsdCents": "0",
+            "dueUsdCents": "2500",
+            "overpaidUsdCents": "0",
+            "status": "Unpaid"
+          },
+          {
+            "invoiceId": "INV-0104",
+            "invoiceUsdCents": "3000",
+            "paidUsdCents": "3500",
+            "dueUsdCents": "0",
+            "overpaidUsdCents": "500",
+            "status": "Overpaid"
+          }
+        ],
+        "duplicates": [
+          {
+            "invoiceId": "INV-0102",
+            "sourceRow": 3,
+            "keptRow": 2
+          }
+        ],
+        "limit": "Computed from sample inputs by an isolated test merchant. The payment contract does not adjudicate report quality or prove a live commercial provider."
+      },
+      "sha256": "e4fde233cd30db0d0995daed1c2eed36ec1ebcbcf6b8cd36352ef025237adf88",
+      "service": "Invoice reconciliation",
+      "sampleInput": true
+    },
+    "setupReceipts": [
+      {
+        "op": "reserve-approval",
+        "transactionHash": "0x1c537a01460f7d200a5c5f1a710c75b9c734c56dd0998dd61fc813424db30025",
+        "blockNumber": "52479281",
+        "status": "success",
+        "gasUsed": "45955",
+        "effectiveGasPrice": "6000000",
+        "executionGasWei": "275730000000",
+        "l1FeeWei": "486",
+        "gasCostWei": "275730000486",
+        "contractAddress": null,
+        "logs": [
+          {
+            "address": "0x04a454373418ae06c8be259e58abc0792a5477de",
+            "topics": [
+              "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+              "0x000000000000000000000000ffca3b5ba97e84763a96840200882412bee8ef9c",
+              "0x0000000000000000000000001f92600480b282026e2bf4c252763566b4212cb6"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000017d7840",
+            "blockHash": "0x0d881849f12f5e05e5f85d25d3acaf79e46e6877b49625c13e255dee2ea0e23d",
+            "blockNumber": "52479281",
+            "blockTimestamp": "1793417725",
+            "transactionHash": "0x1c537a01460f7d200a5c5f1a710c75b9c734c56dd0998dd61fc813424db30025",
+            "transactionIndex": 2,
+            "logIndex": 0,
+            "removed": false,
+            "blockTimestampMs": "0x1a19006c448"
+          }
+        ]
+      },
+      {
+        "op": "quote-funding",
+        "transactionHash": "0xdd829fdb78326c9542b2498249b59e77eb3bbf55079e46014550e6781370da5e",
+        "blockNumber": "52479291",
+        "status": "success",
+        "gasUsed": "265882",
+        "effectiveGasPrice": "6000000",
+        "executionGasWei": "1595292000000",
+        "l1FeeWei": "1072",
+        "gasCostWei": "1595292001072",
+        "contractAddress": null,
+        "logs": [
+          {
+            "address": "0x04a454373418ae06c8be259e58abc0792a5477de",
+            "topics": [
+              "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+              "0x000000000000000000000000ffca3b5ba97e84763a96840200882412bee8ef9c",
+              "0x0000000000000000000000001f92600480b282026e2bf4c252763566b4212cb6"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000017d7840",
+            "blockHash": "0x7f3d88b6b43052f168c66da4ce5f5ac4ba7e2251fae51a2e50b090d78e95c5e5",
+            "blockNumber": "52479291",
+            "blockTimestamp": "1793417727",
+            "transactionHash": "0xdd829fdb78326c9542b2498249b59e77eb3bbf55079e46014550e6781370da5e",
+            "transactionIndex": 4,
+            "logIndex": 29,
+            "removed": false,
+            "blockTimestampMs": "0x1a19006cc18"
+          },
+          {
+            "address": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+            "topics": [
+              "0x4c97fe10da258e102b95065dff65b692ae7f3c9c2155c1cb13225fa2691d75a4",
+              "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+              "0x0000000000000000000000002b376de436e47e22098e0ae287e5aba4594c5cd1",
+              "0x000000000000000000000000e7d2dbf13e0e252d719618ba3ec69f79bf91c1c8"
+            ],
+            "data": "0x000000000000000000000000ffca3b5ba97e84763a96840200882412bee8ef9c000000000000000000000000000000000000000000000005f68e8131ecf800000000000000000000000000000000000000000000000000000000000005f5e10000000000000000000000000000000000000000000000000000000000017d7840000000000000000000000000000000000000000000000000000000006ae561fb000000000000000000000000000000000000000000000000000000006ae5657f000000000000000000000000000000000000000000000000000000006ae56c87",
+            "blockHash": "0x7f3d88b6b43052f168c66da4ce5f5ac4ba7e2251fae51a2e50b090d78e95c5e5",
+            "blockNumber": "52479291",
+            "blockTimestamp": "1793417727",
+            "transactionHash": "0xdd829fdb78326c9542b2498249b59e77eb3bbf55079e46014550e6781370da5e",
+            "transactionIndex": 4,
+            "logIndex": 30,
+            "removed": false,
+            "blockTimestampMs": "0x1a19006cc18"
+          },
+          {
+            "address": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+            "topics": [
+              "0x57d729240f7caab7763d1f70eb5814513247048ab622e92ff5f7a886f6509340",
+              "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+              "0x89da5bbb0b63cfb7c0c5e4f70415c2de1c697a606427485edae1c173d40bcb9c"
+            ],
+            "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae56903",
+            "blockHash": "0x7f3d88b6b43052f168c66da4ce5f5ac4ba7e2251fae51a2e50b090d78e95c5e5",
+            "blockNumber": "52479291",
+            "blockTimestamp": "1793417727",
+            "transactionHash": "0xdd829fdb78326c9542b2498249b59e77eb3bbf55079e46014550e6781370da5e",
+            "transactionIndex": 4,
+            "logIndex": 31,
+            "removed": false,
+            "blockTimestampMs": "0x1a19006cc18"
+          }
+        ]
+      }
+    ],
+    "coverageState": "unchecked",
+    "mandate": {
+      "id": "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+      "network": 84532,
+      "contract": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+      "usdc": "0xc8f4d593e9efaa89519be60e51ff4a57257b2956",
+      "usdt": "0x04a454373418ae06c8be259e58abc0792a5477de",
+      "maxUsdc": "100000000",
+      "maxReserveUsdt": "25000000",
+      "maxUncoveredUsd18": "0",
+      "expiresAt": 0,
+      "maxGasWei": "200000000000000",
+      "gasSpentWei": "0",
+      "maxApiFee": "0",
+      "maxActions": 1,
+      "actionsUsed": 0,
+      "acceptedResultSha256": "e4fde233cd30db0d0995daed1c2eed36ec1ebcbcf6b8cd36352ef025237adf88",
+      "merchantPolicyHash": "0x89da5bbb0b63cfb7c0c5e4f70415c2de1c697a606427485edae1c173d40bcb9c"
+    },
+    "agentTrace": {
+      "quoteId": "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+      "status": "awaiting-buyer",
+      "steps": [
+        {
+          "id": "5a6e834a-7322-4e1d-944b-07e4d0488ac4",
+          "label": "Fund quote",
+          "status": "confirmed",
+          "detail": "Allocating a separate V2 reserve; buyer USDC is not debited.",
+          "at": 1793417723
+        },
+        {
+          "id": "8e55464a-6705-4b0e-a9d7-886db68988cb",
+          "label": "Quote prepared",
+          "status": "confirmed",
+          "detail": "Coverage limit is fixed. The merchant must accept this exact policy before payment.",
+          "at": 1793417728
+        },
+        {
+          "id": "d43a785d-2c12-49f6-9f23-19380872e42c",
+          "label": "Merchant acceptance",
+          "status": "confirmed",
+          "detail": "The merchant role is accepting the exact immutable policy hash.",
+          "at": 1793417728
+        },
+        {
+          "id": "376a3fe3-a13b-41c8-a2d0-08700eec849a",
+          "label": "Merchant accepted",
+          "status": "confirmed",
+          "detail": "Maximum uncovered USD, parties, assets, amount and expiry are locked.",
+          "txHash": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+          "at": 1793417730
+        }
+      ],
+      "message": "Maximum uncovered USD, parties, assets, amount and expiry are locked."
+    },
+    "policyHash": "0x89da5bbb0b63cfb7c0c5e4f70415c2de1c697a606427485edae1c173d40bcb9c",
+    "onchainUncoveredUsd18": "0",
+    "scenario": "fully-covered",
+    "merchantAcceptanceTx": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+    "merchantAcceptanceReceipt": {
+      "transactionHash": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+      "blockNumber": "52479305",
+      "status": "success",
+      "gasUsed": "50570",
+      "effectiveGasPrice": "6000000",
+      "executionGasWei": "303420000000",
+      "l1FeeWei": "619",
+      "gasCostWei": "303420000619",
+      "contractAddress": null,
+      "logs": [
+        {
+          "address": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+          "topics": [
+            "0xd299f21f83e4733ba354ab7e47b0ea94a15d7e5663b4746a28f37bbc17cae793",
+            "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+            "0x000000000000000000000000e7d2dbf13e0e252d719618ba3ec69f79bf91c1c8",
+            "0x89da5bbb0b63cfb7c0c5e4f70415c2de1c697a606427485edae1c173d40bcb9c"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae56903",
+          "blockHash": "0xbd914ea62effa31606a9e545ffd2fe0fc67c14153f62b5d0db3b66ce757a57ea",
+          "blockNumber": "52479305",
+          "blockTimestamp": "1793417729",
+          "transactionHash": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+          "transactionIndex": 2,
+          "logIndex": 0,
+          "removed": false,
+          "blockTimestampMs": "0x1a19006d708"
+        }
+      ]
+    },
+    "merchantGasSpentWei": "303420000619"
+  },
+  "policyHash": "0x89da5bbb0b63cfb7c0c5e4f70415c2de1c697a606427485edae1c173d40bcb9c",
+  "merchant": "0xe7D2dBf13e0e252d719618Ba3eC69F79bf91C1c8",
+  "receipt": {
+    "transactionHash": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+    "blockNumber": "52479305",
+    "status": "success",
+    "gasUsed": "50570",
+    "effectiveGasPrice": "6000000",
+    "executionGasWei": "303420000000",
+    "l1FeeWei": "619",
+    "gasCostWei": "303420000619",
+    "contractAddress": null,
+    "logs": [
+      {
+        "address": "0x1f92600480b282026e2bf4c252763566b4212cb6",
+        "topics": [
+          "0xd299f21f83e4733ba354ab7e47b0ea94a15d7e5663b4746a28f37bbc17cae793",
+          "0x30e631c5d2234c0ddea962e8165be1989aadcfd7fa71a70ef59549bd17c5338f",
+          "0x000000000000000000000000e7d2dbf13e0e252d719618ba3ec69f79bf91c1c8",
+          "0x89da5bbb0b63cfb7c0c5e4f70415c2de1c697a606427485edae1c173d40bcb9c"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ae56903",
+        "blockHash": "0xbd914ea62effa31606a9e545ffd2fe0fc67c14153f62b5d0db3b66ce757a57ea",
+        "blockNumber": "52479305",
+        "blockTimestamp": "1793417729",
+        "transactionHash": "0x5b476fcbb9900b9bcb3446fbf0fab1178c29fd8d51cc94b730d2323603e15514",
+        "transactionIndex": 2,
+        "logIndex": 0,
+        "removed": false,
+        "blockTimestampMs": "0x1a19006d708"
+      }
+    ]
+  }
+}

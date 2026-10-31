@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-31T03:50:08.607Z",
+  "npmCi": true,
+  "forgeBuild": true,
+  "productionBuild": true,
+  "productionStart": true,
+  "noEnvFile": true,
+  "noWallets": true,
+  "noLocalStateAtBoot": true,
+  "v1SavedHistoryLoaded": true,
+  "v2SavedHistoryLoaded": true,
+  "v1SignerEnabled": false,
+  "v2SignerEnabled": false,
+  "distinctDeployments": true,
+  "v1Url": "http://localhost:3104/",
+  "v2Url": "http://localhost:3104/next",
+  "v1Quote": "0x62940cbd860e610e886e9c13c536856224d60602ddee8b3f38f27f56baa741a7",
+  "v2Quote": "0x97fffba94a8738acbebb2cb0a949307936619550786192da3f3398b5962c4c7e"
+}
