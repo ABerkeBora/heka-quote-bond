@@ -162,7 +162,7 @@ Envelope age≤120s, each source observation age≤300s, future skew≤60s are c
 
 The first sufficiently fresh accepted snapshot in the agreed window wins; it does not prove an exact historical deadline price. The signature authenticates Nodary's answer, not source truth, stablecoin solvency, fiat redemption, commercial invoice acceptance or service quality. The system is a bounded deterministic payer, not an LLM settlement authority. The local merchant is an isolated test participant; no commercial customers or revenue are claimed. See `contracts/SECURITY.md` and `evidence/SECURITY_REVIEW.md`.
 
-## Checks and delivery
+## V1 baseline checks and delivery
 
 - `npm test`:24 Node policy/precision/service tests.
 - `forge test`:34 contract tests, including oracle/time/recipient/replay/cap/void cases.

@@ -1,0 +1,37 @@
+{
+  "project": "Quote Bond",
+  "checkedAtUtc": "2026-10-31T03:52:01.949Z",
+  "v1": {
+    "url": "http://localhost:3104/",
+    "status": "READY",
+    "baselineCommit": "974ae378b3e953d1dc8804c51ffb721133be70a7"
+  },
+  "v2": {
+    "url": "http://localhost:3104/next",
+    "status": "READY",
+    "commit": "0bf86755be4c6330c7f896c684efdda75351eb45"
+  },
+  "changes": [
+    "Merchant kabulü exact policy hash ile on-chain kilitlendi.",
+    "Geçerli fiyat coverage limitine yetmezse ödeme duruyor.",
+    "V2 state, token ve roller ayrı; V1 korundu."
+  ],
+  "verified": [
+    "evidence/v2/live-summary.json",
+    "evidence/v2/agent-coverage-block.json",
+    "evidence/v2/browser-payment.json",
+    "evidence/v2/process-restart.json",
+    "evidence/v2/v1-regression.json",
+    "evidence/v2/clean-start.json",
+    "evidence/v2/BROWSER_QA.md"
+  ],
+  "pending": [
+    "150 saniyelik video ve Devfolio kullanıcı adımı.",
+    "Dış merchant pilotu PENDING; ayrı test rolü kanıtlandı."
+  ],
+  "recommendation": {
+    "version": "V2",
+    "reason": "Merchant’ın kabul ettiği minimum ekonomik karşılığı sözleşmeye bağladığı için müşteri değeri ve kabul/ret ayrımı daha açık. V1’in capped ödemesi bilinçli davranıştır; V2 ek merchant tercihidir.",
+    "demoRisk": "medium"
+  }
+}

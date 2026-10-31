@@ -42,8 +42,14 @@ Tüm yeni kanıtlar `evidence/v2/` altında. Bağımsız incelemede policy hash'
 ## Kalanlar ve sınırlar
 
 - **Video + Devfolio PENDING:** kullanıcı kaydı/girişi, yaklaşık15–25dk. Tek takım/tek submission; son tarih31 Ekim15:00 Europe/Berlin. Bu chat başvuru/hosting yapmadı.
-- **Dış merchant pilotu yapılmadı.** Ayrı test rolünün gerçek on-chain kabulü ve örnek defterden hesaplanmış rapor var; ticari müşteri/gerçekfiat backing iddiası yok.
+- **Dış merchant pilotu PENDING / yapılmadı.** Ayrı test rolünün gerçek on-chain kabulü ve örnek defterden hesaplanmış rapor var; ticari müşteri/gerçekfiat backing iddiası yok.
 - Blocked rezerv harddeadline'a kadar kilitlidir; sonrasında V2 release/void yolu kullanılabilir. Yeni invoice eski limiti değiştirmez. Merchant acceptance ve buyer mandate expiry exclusive; node/gas cap uygulama guard'ıdır.
 - Pozitif/partial şartlar açık stress quote'tur, depeg uydurulmadı. İmza fiyatın doğruluğunu/USDT backing'ini/rapor kalitesini kanıtlamaz. Source stale ise bekle ve taze veriyle tekrar dene; policy'yi gevşetme.
 
 31 Ekim04:46Europe/Berlin: API3 ve genel kurallar doğru sekmeler açılıp yeniden okundu, değişiklik yok. Temiz source-only kopya, env/key/localstate olmadan iki route ve iki kaydedilmiş geçmişi production açtı; signerlar disabled idi (`clean-start.json`). Son13receipt RPC ile yeniden doğrulandı (`final-receipt-check.json`). Teknik blocker yok; final public push/commit kaydı aşağıdaki kısa özette tamamlanır.
+
+## Kısa karşılaştırma kaydı
+
+`REVIEW_SUMMARY.json` iki READY linki, doğrulama zamanını ve129 test/gerçek işlem dosyalarını birleştirir. V1 baseline974ae378; V2 incelenen uygulama commit’i0bf86755. ÖneriV2, demoRiskmedium: merchant’ın minimum karşılığını uygulayan açık kabul/ret örneği daha güçlü; ek kabul adımı ve RPC/freshness bağımlılığı açıklanmalı. Video/Devfolio kullanıcıda; dış merchant pilotuPENDING.
+
+Public `codex/next` codepush ve `v1-baseline` tag doğrulandı; GitHub author/committer ABerkeBora. Son yerel production smoke testinde iki route/ayrı deployment ve iki izole signer hazır. Sunucu3104’te açık bırakıldı.
